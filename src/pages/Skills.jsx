@@ -1,27 +1,31 @@
-import React from 'react'
+import React from 'react';
+import Marquee from "react-fast-marquee";
 
 const Skills = () => {
   const skills = [
-    "React", "Nextjs", "JavaScript", "TypeScript", "MongoDB",
+    "React", "Next.js", "JavaScript", "TypeScript", "MongoDB",
     "TailwindCSS", "Node.js", "Express.js", "Java", "Python",
-    "MySQL", "PostgreSQL"
+    "MySQL", "PostgreSQL", "AWS", "GSAP", "Docker", "Firebase"
   ];
 
   return (
-    <div className="flex pt-8 space-x-4 flex-wrap bg-amber-100 ">
-      <h1 className='text-4xl mx-12'>Technologies and Tools I work with</h1>
-      <ul className="flex flex-wrap bg-green-300 gap-4">
+    <div className="bg-[#dbeafe]  overflow-hidden">
+      <h1 className="text-xl sm:text-5xl mx-4 sm:mx-10 font-semibold py-4">
+        Technologies and Tools I Work With
+      </h1>
+
+      <Marquee className='bg-green-300' direction="left" speed={80} gradient={false}>
         {skills.map((skill, index) => (
-          <li
+          <div
             key={index}
-            className=" text-black p-4 "
+            className=" text-[#1e293b	] font-semibold px-4 py-5 mx-2 rounded-full text-sm sm:text-base"
           >
             {skill}
-          </li>
+          </div>
         ))}
-      </ul>
+      </Marquee>
     </div>
   );
-}
+};
 
 export default Skills;

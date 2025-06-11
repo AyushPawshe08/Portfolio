@@ -8,6 +8,9 @@ import About from './pages/About.jsx'
 import Skills from './pages/Skills.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
+// import Menu from './components/Menu.jsx'
+import Loader from "./components/Loader.jsx"
+
 
 
 
@@ -17,6 +20,8 @@ const router = createBrowserRouter([
   {path:"/skills",element:"<Skills/>"},
   {path:"/projects",element:"<About/>"},
   {path:"/contact",element:"<Contact/>"},
+  // {path:"/menu",element:<Menu/>},
+  {path:"/loader",element:<Loader/>},
   {path: "*",element:<NotfoundPage/>},
 ])
 

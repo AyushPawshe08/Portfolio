@@ -29,14 +29,14 @@ const Projects = () => {
   };
 
   return (
-    <div className='bg-[#F2C3D3] h-full p-6'>
-      <h1 className='text-6xl flex items-center font-bold gap-4 mb-8'>
+    <div className='bg-[#fff7ed] h-full p-6'>
+      <h1 className='text-5xl sm:text-8xl flex items-center font-semibold gap-4 mb-8'>
         <motion.div
-        className='text-gradient-to-r text-amber-100 text-8xl'
+        className='text-gradient-to-r text-amber-100 '
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 10, ease: "linear" }} // slow rotation
         >
-          <IoIosSettings />
+          <IoIosSettings className='hidden md:block' />
         </motion.div>
         My Projects
       </h1>
@@ -45,7 +45,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className='bg-[#F2C3D3] hover:bg-[#F2D1DD] p-4  transition-colors duration-300'
+            className='bg-[#fff7ed] hover:bg-[#ffedd5] p-4  transition-colors duration-300'
           >
             <div
               className='flex justify-between items-center cursor-pointer'

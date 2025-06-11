@@ -6,3 +6,16 @@
   --font-poppins: Poppins, 'sans-serif';
   --font-dancingscript: 'Dancing Script', 'cursive';
 }
+
+@keyframes underlineGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-underline {
+  animation: underlineGrow 1.3s ease forwards;
+}
