@@ -13,6 +13,19 @@ const Projects = () => {
       link: "https://github.com/AyushPawshe08/RealTime-Chatapp",
       live: "https://realtime-chat-app-01ps.onrender.com/"
     },
+     {
+      name: "AI Summarizer Chrome Extension",
+      description:
+        "Summarizes any webpage into brief, detailed, or bullet point formats directly in the browser.",
+      tech: [
+        "JavaScript",
+        "Chrome Extension",
+        "Manifest V3",
+        "AI API (Gemini)",
+      ],
+      link: "https://github.com/AyushPawshe08/AI-Summarizer-Chrome-Extension",
+      live: "",
+    },
     {
       name: "BudgetTracker",
       description: "A Budget Tracker to track your expenses",
