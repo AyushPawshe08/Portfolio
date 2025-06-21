@@ -11,7 +11,7 @@ const Projects = () => {
       description: "A realtime Chatapp built using Socket.IO",
       tech: ["React", "Tailwind", "Socket.IO"],
       link: "https://github.com/AyushPawshe08/RealTime-Chatapp",
-      live: "https://realtime-chat-app-01ps.onrender.com/"
+      live: "https://chatify-k81w.onrender.com"
     },
      {
       name: "AI Summarizer Chrome Extension",
